@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/peach_pink"
+    >
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:background="@color/peach_pink"
+        >
+        <!--Row 1 Input box-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@color/light_brown">
+
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/silver_gray"
+                android:hint="Enter Numbers"
+                android:textAlignment="center"
+                />
+        </RelativeLayout>
+
+        <!--Row 2 buttons-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/light_brown">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:rowCount="3"
+                android:columnCount="2"
+                android:layout_centerInParent="true">
+
+                <Button
+                    android:id="@+id/btnSum"
+                    style="@style/buttonStyle"
+                    android:text="SUM"/>
+
+                <Button
+                    android:id="@+id/btnMean"
+                    style="@style/buttonStyle"
+                    android:text="MEAN"/>
+
+                <Button
+                    android:id="@+id/btnMedian"
+                    style="@style/buttonStyle"
+                    android:text="MEDIAN"/>
+
+                <Button
+                    android:id="@+id/btnStdv"
+                    style="@style/buttonStyle"
+                    android:text="STDV"/>
+
+                <Button
+                    android:id="@+id/btnMinimum"
+                    style="@style/buttonStyle"
+                    android:text="MIN"/>
+
+                <Button
+                    android:id="@+id/btnMaximum"
+                    style="@style/buttonStyle"
+                    android:text="MAX"/>
+
+            </GridLayout>
+
+
+        </RelativeLayout>
+
+        <!--Row 3 result-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@color/light_brown"
+            android:rowCount="2"
+            android:columnCount="3">
+
+            <TextView
+                android:id="@+id/ResultTextView"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gray"
+                android:hint="Result"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
