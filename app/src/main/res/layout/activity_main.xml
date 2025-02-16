@@ -25,6 +25,7 @@
             android:background="@color/light_brown">
 
             <EditText
+                android:id="@+id/numbersInput"
                 android:layout_width="240dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="30dp"
@@ -102,7 +103,7 @@
                 android:layout_centerHorizontal="true"
                 android:background="@color/gray"
                 android:hint="Result"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textColor="@color/black"
                 android:textAlignment="center"
                 />
